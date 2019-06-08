@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/10.0.0/css/fabric.min.css" />
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <script src="main.js"></script>
+    <style type="text/css">
+        .navbar{margin-bottom:12px;}
+        /* .ms-depth-8{margin-top:40px;} */
+        .no-border{
+            border:none
+        }
+        .source{
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        table{
+            table-layout:fixed;
+            word-wrap:break-word;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ms-depth-8" style="margin-bottom: 25px;margin-top: 0px">
+    <!-- <div class="container">
+        <div class="col-md-4">
+        <nav  class="navbar navbar-expand-md">               
+                           
+                             <a class="navbar-brand" href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/HSBC_Logo_2018.png" class="d-inline-block align-top" style="height: 30px;" alt="">
+                  </a>
+                   </nav>           
+               </div>
+               <div class="col-md-8"></div>
+            </div> -->
+            <img src="/assets/Banner7.png" class="img-fluid" style="height: auto;max-width: 100%;"  alt="">
+     </div>        
+            
+    <div class="container ms-depth-8">
+        <!-- <div class="row">
+            <div class="col-md-12">
+                    
+            </div>
+        </div> -->
+        <div class="container">
+            <div class="col-md-6 box-shadow">
+                <h3 class="text-center bg-primary well-sm source">Make The Right Choice</h3>
+                <form action="" id="info">
+                    <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="fname">First Name:</label>
+                            <input type="text"   data-validation="required,alphanumeric" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" data-validation="required,alphanumeric" class="form-control" id="lname" placeholder="Enter First Name" name="lname">
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" data-validation="email"  class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        
+                     </div>
+                     <div class="col-md-6">
+                         
+                         <div class="form-group">
+                                 <label for="mobile">Mobile:</label>
+                                 <input type="number" data-validation="length" data-validation-length="9-10"  class="form-control" id="mobile" placeholder="Enter Mobile No." name="mobile">
+                         </div>
+                    </div>
+                </div>
+                       <div class="row">
+                           <div class="col-md-6">
+
+                                <div class="form-group">
+                                        <label for="age">Age:</label>
+                                        <input type="number"  data-validation="required,number" data-validation-allowing="range[15;80]" min="0" data-validation-help="Enter value within 15 to 80 years" class="form-control" id="age" placeholder="Enter Age" name="age">
+                                </div>
+                           </div>
+                           <div class="col-md-6">
+                                <div class="form-group">
+                                        <label for="income">Net Income / Month:</label>
+                                        <input type="number" data-validation="required,number" data-validation="number" data-validation-allowing="range[1000;9999999]"  min="0" class="form-control" id="income" placeholder="Enter Income" name="income">
+                                 </div>
+                           </div>
+                       </div>
+
+                      
+                       
+                        <hr>
+                         <div class="row from-group">
+                            <div class="col-md-6">
+                               <label for="loan">Do You Have Any Active Loan ?</label>
+                                   </div>
+                                <div class="col-md-3">
+                                            <div class="radio">
+                                                    <label><input type="radio" name="loan" data-validation="required" value="Yes">Yes</label>
+                                            </div>
+                                        
+                                    </div>
+                                    <div class="col-md-3">
+                                                <div class="radio">
+                                                        <label><input type="radio" name="loan" value="No">No</label>
+                                                </div>
+
+                            </div>
+                         </div>
+                         <hr>
+                       
+                         <div class="row form-group">
+                                <div class="col-md-6">
+                                    <label for="investments" style="vertical-align: middle;position:relative">Do You Have Any Investments ?</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="radio">
+                                                    <label><input type="radio" name="investments" data-validation="required" value="Yes" >Yes</label>
+                                            </div>  
+                                        </div>
+                                        <div class="col-md-3">
+                                            
+                                            <div class="radio">
+                                                    <label><input type="radio" name="investments" value="No" >No</label>
+                                            </div>
+                                </div>
+                             </div>
+                             <hr>
+                             <div class="row form-group">
+                                    <div class="col-md-12">
+                                        
+                                            <label for="tenure">What is the tenure of your investments ?</label>
+                                                
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                                            <div class="radio">
+                                                                        <label><input type="radio" name="tenure" data-validation="required" value="longterm" >Long Term</label>
+                                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-md-4">
+                                                        <div class="radio">
+                                                                <label><input type="radio" name="tenure" value="midterm" >Mid Term</label>
+                                                        </div>
+                                                
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                <div class="radio">
+                                                        <label><input type="radio" name="tenure" value="shortterm" >Short Term</label>
+                                                </div>
+        
+                                     </div>
+                                 </div>
+                                 <!-- This part will render on selection of tenure of investment -->
+                                 <div class="row">
+                                     <!-- section for long term -->
+                                     <div class="col-md-12" id="Long" style="display: none">
+                                        <div class="radio">
+                                            <label><input type="radio" name="longterm" data-validation="required" value="Build a nest egg for retirement" ><i class="fa fa-home fa-lg" aria-hidden="true"></i><span> &nbsp;Build A Nest Egg For Retirement</span> </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="longterm"  value="Income stream for retirement" ><i class="fa fa-calendar fa-lg" aria-hidden="true"></i>&nbsp;Income Scheme For Retirement</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="longterm"  value="Leave a financial legacy to your family" ><i class="fa fa-money fa-lg" aria-hidden="true"></i> &nbsp;Leave Financial Legacy To Your Family</label>
+                                        </div>
+                                    </div>
+                                    <!-- end of section for long term -->
+
+                                    <!-- section for mid term -->
+                                     <div class="col-md-12" id="Mid" style="display: none">
+                                        <div class="radio">
+                                            <label><input type="radio" name="midterm" data-validation="required" value="Buy a vacation home" ><i class="fab fa-fort-awesome-alt fa-lg"></i>&nbsp;Buy A Vacation Home</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="midterm"  value="Save a down payment for a home" ><i class="fas fa-donate fa-lg"></i>&nbsp;Save A Down Payment For A Home</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="midterm"  value="Have the funds to start a new business" ><i class="fas fa-hand-holding-usd fa-lg"></i>&nbsp;Have The Funds To Start A New Business</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="midterm"  value="Save for you childrens education" ><i class="fas fa-graduation-cap fa-lg"></i>&nbsp;Save For Your Children's Education</label>
+                                        </div>
+                                     </div>
+                                     <!-- end of section for mid term -->
+
+                                     <!-- section for short term -->
+                                     <div class="col-md-12" id="Short" style="display: none">
+                                            <div class="radio">
+                                                    <label><input type="radio" name="shortterm" data-validation="required" value="Take a vacation" ><i class="fas fa-plane-departure fa-lg"></i>&nbsp;Take A Vacation</label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label><input type="radio" name="shortterm"  value="Plan for wedding" ><i class="fa fa-venus-mars fa-lg" aria-hidden="true"></i>&nbsp;Plan For Wedding</label>
+                                                </div>
+                                                
+                                     </div>
+                                     <!-- end of section for short term -->
+                                 </div>
+                                 <!-- End of This part will render on selection of tenure of investment -->
+                                <hr>
+                                <div class="form-group">
+                                        <label for="contribute">Enter Amount To be Invested Per Month:</label>
+                                        <input type="number" data-validation="sixty_percent,required" class="form-control" id="contribute" placeholder="Enter Contribution Amount" name="contribute">
+                                </div>
+                                <hr>
+                                 <div class="row">
+                                     <div class="col-md-3">
+                                            <label for="risk">How Much Risk Would You Preffer In Your Portfolio ?</label>
+                                     </div>
+                                     <div class="col-md-3">
+                                            <div class="radio">
+                                                    <label><input type="radio" name="risk" value="Low" >Low</label>
+                                            </div>
+                                     </div>
+                                     <div class="col-md-3">
+                                            <div class="radio">
+                                                    <label><input type="radio" name="risk" value="Mid">Medium</label>
+                                            </div>
+                                     </div>
+                                     <div class="col-md-3"> <div class="radio">
+                                            <label><input type="radio" name="risk" value="High" >High</label>
+                                    </div>
+                                </div>
+                                 </div>
+
+                              <div class="form-group text-center">
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <button class="btn btn-primary btn-lg" id="submit" >Submit</button>
+                                      </div>
+                                     
+                                  </div>
+                              </div>
+                </form>
+
+            </div>
+            <!-- Suggestion Section -->
+            <div class="col-md-6" style="">
+                    <h3 id="suggestionHeader" class="text-center bg-primary well-sm source">What Is Mutual Funds ?</h3>
+                <div id="resultCon" style="min-width: height 800px;">
+
+                        <div class="jumbotron jumbotron-fluid" style="background-color: inherit;">
+                            <img class="img-fluid" src="/assets/landing.png" style="height: auto;width:100%"/>
+                                <div class="container">
+                                    <br>
+                                  <!-- <h1 class="display-4">Fluid jumbotron</h1> -->
+                                  <p><small class="source">Mutual funds pool money from the investing public and use that money to buy other securities, usually stocks and bonds. 
+                                        The value of the mutual fund company depends on the performance of the securities it decides to buy. 
+                                        So, when you buy a unit or share of a mutual fund, you are buying the performance of its portfolio or more precisely, 
+                                        a part of the portfolio's value.</small>
+                                </p>
+                                <p>
+                                  <table class="table source table-responsive">
+                                      <tr>
+                                          <th style="font-size: large;color:green"><i class="glyphicon glyphicon-thumbs-up"></i>&nbsp;&nbsp;Advantages</th>
+                                          <th style="font-size:large;color: red"><i class="glyphicon glyphicon-thumbs-down"></i>&nbsp;&nbsp;Disadvantages</th>
+                                      </tr>
+                                      <tr>
+                                          <td>Liquidity</td>
+                                          <td>Cost To Manage Mutual Funds</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Diversification</td>
+                                          <td>Lock-In Periods</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Expert Management</td>
+                                          <td>Dilution</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Systemetic or One Time Investments</td>
+                                          <td>Market Risks</td>
+                                      </tr>
+                                  </table>
+
+
+
+                                </p>
+                                </div>
+                              </div>
+
+
+                </div>    
+            </div>
+            <!-- Suggestion Section -->
+        </div>
+    </div>
+    
+</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
+
+</html>
